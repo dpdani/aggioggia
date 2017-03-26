@@ -26,6 +26,9 @@ Basically aggioggia is running the following apt commands:
 4. `apt upgrade`
 5. `apt autoremove`
 
+## Installation
+Copy the file `aggioggia` to `/usr/bin/`. You'll be able to use aggioggia from the command line.
+
 ## Dependencies
 - `apt-get`
 - `apt`
