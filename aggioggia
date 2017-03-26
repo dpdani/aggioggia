@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+sudo echo "=====================" >> /dev/null
+sudo date >> /dev/null
+
+sudo echo " ⇒  Pre-update cleaning..."
+sudo apt-get autoremove --purge --yes  >> /dev/null
+
+sudo echo " ⇒  Fetching updates..."
+sudo apt-get update --yes >> /dev/null
+
+sudo echo " ⇒  Available updates:"
+sudo apt list --upgradable  # let print to screen
+
+sudo echo " ⇒  Running upgrade..."
+sudo apt-get upgrade --yes >> /dev/null
+
+sudo echo " ⇒  Cleaning up..."
+sudo apt-get autoremove --purge --yes >> /dev/null
+
+sudo echo " ⇒  System updated"
+exit 0
